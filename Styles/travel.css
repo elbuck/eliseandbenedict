@@ -1,0 +1,179 @@
+	.top-line {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+
+	.date {
+		padding-right: 15px;
+		font-size: 14px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.vl {
+		border-left: 1.5px solid black;
+		border-radius: 9px;
+		height: 16px;
+		margin-top: 1px;
+		padding: 0;
+	}
+
+	.city {
+		font-size: 14px;
+		padding-left: 15px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.nav-drop-down {
+		border: 0;
+		background-color: transparent;
+		margin-right: 2%;
+	}
+	.nav-drop-down:hover {
+		font-size: 110%;
+	}
+
+	.nav-drop-down:focus {
+		outline: none;
+	}
+
+	.drop-down-list {
+		display: none;
+	}
+
+	.drop-down-list.show {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		text-transform: uppercase;
+		margin-top: 20px;
+		background-color: white;
+		opacity: 0.7;
+	}
+
+	.drop-down-list li {
+		position: relative;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	.drop-down-list a {
+		position: relative;
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.drop-down-list a:hover {
+		border-bottom: 1px solid black;
+		opacity: 0.5;
+	}
+
+	.parent-names {
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
+
+	.names {
+		font-size: 75px;
+		font-family: 'Great Vibes', cursive;
+	}
+
+
+.registered {
+	height: 25px;
+	width: 100%;
+	background-color: #08450a;
+}
+
+.travel-image {
+	display: flex;
+	justify-content: center;
+}
+
+.stl-arch {
+	border: 1px solid black;
+	box-shadow: ;
+	margin-top: 5%;
+}
+
+.hl2-parent {
+	display: flex;
+	justify-content: center;
+}
+
+.hl2 {
+	border-bottom: 1px solid black;
+	width: 150px;
+	margin-top: 2%;
+}
+
+.accomodations {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size: 60px;
+	margin-top: 5%;
+}
+
+.hotel-name {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size: 60px;
+	margin-top: 5%;
+}
+
+.hotel-street {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 30px;
+	margin-top: 4%;
+}
+
+.hotel-address {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 30px;
+	margin-top: 1%;
+}
+
+.hotel-website-parent {
+	display: flex;
+	justify-content: center;
+}
+
+.hotel-website {
+	width: 300px;
+	height: 75px;
+	border: 1px solid black;
+	background-color: transparent;
+	font-size: 20px;
+	font-family: 'Cinzel', serif;
+	margin-top: 5%;
+}
+
+.prayer {
+	font-size:  1.5vw;
+	margin-top: 60px;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+}
+
+.footer {
+	height: 40px;
+	width: 100%;
+	background-color: #08450a;
+}
+
+
+
