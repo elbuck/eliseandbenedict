@@ -1,3 +1,129 @@
+@media screen and (max-width: 600px) {
+	.top-line {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.date {
+		display: none;
+	}
+
+	.vl {
+		display: none;
+	}
+
+	.city {
+		display: none;
+	}
+
+	.nav-drop-down {
+		border: 0;
+		background-color: transparent;
+	}
+
+	.nav-drop-down:focus {
+		outline: none;
+	}
+
+	.drop-down-list {
+		display: none;
+	}
+
+	.drop-down-list.show {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		text-transform: uppercase;
+		margin-top: 20px;
+		background-color: white;
+		width: 100%;
+	}
+
+	.drop-down-list li {
+		position: relative;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.drop-down-list a {
+		position: relative;
+		font-size: 15px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.drop-down-list a:hover {
+		border-bottom: 1px solid black;
+		opacity: 0.5;
+	}
+
+	.parent-names {
+		display: flex;
+		justify-content: center;
+		padding-top: 35px;
+	}
+
+	.names {
+		font-size: 30px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.registered {
+		height: 15px;
+		width: 100%;
+		background-color: #08450a;
+	}
+
+	.jandgwedding-pic {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+	}
+
+	.jandgwedding {
+		width: 30%;
+		margin-top: 10%;
+		margin-right: 5%;
+	}
+
+	.aandpwedding {
+		width: 30%;
+		margin-top: 10%;
+		margin-right: 5%;
+	}
+
+	.kandjwedding {
+		width: 30%;
+		margin-top: 10%;
+	}
+
+	.prayer {
+		font-size:  8px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 20px;
+		width: 100%;
+		background-color: #08450a;
+	}
+}
+
+@media screen and (min-width: 601px) {
 	.top-line {
 		display: flex;
 		flex-direction: row;
@@ -91,23 +217,23 @@
 		font-family: 'Great Vibes', cursive;
 	}
 
-
-.registered {
-	height: 25px;
-	width: 100%;
-	background-color: #08450a;
-}
-
+	.registered {
+		height: 25px;
+		width: 100%;
+		background-color: #08450a;
+	}
 
 
-.prayer {
-	font-size:  1.5vw;
-	margin-top: 30px;
-	text-align: center;
-	font-family: 'Cinzel', serif;}
 
-.footer {
-	height: 40px;
-	width: 100%;
-	background-color: #08450a;
+	.prayer {
+		font-size:  1.5vw;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;}
+
+	.footer {
+		height: 40px;
+		width: 100%;
+		background-color: #08450a;
+	}
 }

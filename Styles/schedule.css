@@ -1,3 +1,199 @@
+@media screen and (max-width: 600px) {
+	.top-line {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.date {
+		display: none;
+	}
+
+	.vl {
+		display: none;
+	}
+
+	.city {
+		display: none;
+	}
+
+	.nav-drop-down {
+		border: 0;
+		background-color: transparent;
+	}
+
+	.nav-drop-down:focus {
+		outline: none;
+	}
+
+	.drop-down-list {
+		display: none;
+	}
+
+	.drop-down-list.show {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		text-transform: uppercase;
+		margin-top: 20px;
+		background-color: white;
+		width: 100%;
+	}
+
+	.drop-down-list li {
+		position: relative;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.drop-down-list a {
+		position: relative;
+		font-size: 15px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.drop-down-list a:hover {
+		border-bottom: 1px solid black;
+		opacity: 0.5;
+	}
+
+	.parent-names {
+		display: flex;
+		justify-content: center;
+		padding-top: 35px;
+	}
+
+	.names {
+		font-size: 30px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.registered {
+		height: 15px;
+		width: 100%;
+		background-color: #08450a;
+	}
+
+	.ceremony {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 4%;
+	}
+
+	.church-picture {
+		display: flex;
+		justify-content: center;
+	}
+
+	.stfd-pic {
+		border: 2px solid black;
+		box-shadow: 3px 3px lightgrey;
+		height: 300px;
+		width: 300px;
+		margin: 5% 0;
+	}
+
+	.church-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 3%;
+	}	
+
+	.ceremony-info {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 50px;
+		font-family: 'Great Vibes', cursive;
+	}
+
+	.date-ceremony {
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.time-ceremony {
+		font-family: 'Cinzel', serif;
+		font-size: 15px;
+	}
+
+	.hl-parent {
+		display: flex;
+		justify-content: center;
+	}
+
+	.hl {
+		border-top: 1.5px solid black;
+		width: 200px;
+		margin: 10% 0;
+	}
+
+	.location {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.church-name {
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.church-location {
+		text-align: center;
+		color: black;
+		font-size: 15px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.reception {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 4%;
+	}
+
+	.union-station-pic {
+		border: 2px solid black;
+		box-shadow: 3px 3px lightgrey;
+		height: 300px;
+		widows: 300px;
+		margin: 10% 0;
+	}
+
+	.prayer {
+		font-size:  8px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 20px;
+		width: 100%;
+		background-color: #08450a;
+	}
+}
+
+@media screen and (min-width: 601px) {
 	.top-line {
 		display: flex;
 		flex-direction: row;
@@ -90,28 +286,26 @@
 		font-family: 'Great Vibes', cursive;
 	}
 
-.registered {
-	height: 25px;
-	width: 100%;
-	background-color: #08450a;
-}
+	.registered {
+		height: 25px;
+		width: 100%;
+		background-color: #08450a;
+	}
 
+	.ceremony {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 4%;
+	}
 
-
-.ceremony {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 4%;
-}
-
-		.stfd-pic {
-			border: 2px solid black;
-			box-shadow: 3px 3px lightgrey;
-			height: 400px;
-			width: 400px;
-			margin: 3% 0;
-		}
+	.stfd-pic {
+		border: 2px solid black;
+		box-shadow: 3px 3px lightgrey;
+		height: 400px;
+		width: 400px;
+		margin: 3% 0;
+	}
 
 	.church-info {
 		display: flex;
@@ -120,37 +314,37 @@
 		margin-left: 3%;
 	}	
 
-
 	.ceremony-info {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
 
-		.title {
-			font-size: 90px;
-			font-family: 'Great Vibes', cursive;
-		}
+	.title {
+		font-size: 90px;
+		font-family: 'Great Vibes', cursive;
+	}
 
-		.date-ceremony {
-			font-size: 25px;
-			font-family: 'Cinzel', serif;
-		}
+	.date-ceremony {
+		font-size: 25px;
+		font-family: 'Cinzel', serif;
+	}
 
-		.time-ceremony {
-			font-family: 'Cinzel', serif;
-			font-size: 20px;
-		}
+	.time-ceremony {
+		font-family: 'Cinzel', serif;
+		font-size: 20px;
+	}
 
 	.hl-parent {
 		display: flex;
 		justify-content: center;
 	}
-		.hl {
-			border-top: 1.5px solid black;
-			width: 300px;
-			margin: 2.5%;
-		}
+
+	.hl {
+		border-top: 1.5px solid black;
+		width: 300px;
+		margin: 2.5%;
+	}
 
 	.location {
 		display: flex;
@@ -158,27 +352,27 @@
 		flex-direction: column;
 	}
 
-		.church-name {
-			text-align: center;
-			color: black;
-			font-size: 25px;
-			font-family: 'Cinzel', serif;
-		}
+	.church-name {
+		text-align: center;
+		color: black;
+		font-size: 25px;
+		font-family: 'Cinzel', serif;
+	}
 
-		.church-location {
-			text-align: center;
-			color: black;
-			font-size: 20px;
-			font-family: 'Cinzel', serif;
-		}
+	.church-location {
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
+	}
 
-.reception {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 4%;
-	margin-left: -2.5%;
-}
+	.reception {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 4%;
+		margin-left: -2.5%;
+	}
 
 	.union-station-pic {
 			border: 2px solid black;
@@ -188,18 +382,18 @@
 			margin: 3% 0;
 	}
 
-.prayer {
-	font-size:  1.5vw;
-	margin-top: 60px;
-	text-align: center;
-	font-family: 'Cinzel', serif;
+	.prayer {
+		font-size:  1.5vw;
+		margin-top: 60px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 40px;
+		width: 100%;
+		background-color: #08450a;
+	}
+
 }
-
-.footer {
-	height: 40px;
-	width: 100%;
-	background-color: #08450a;
-}
-
-
 

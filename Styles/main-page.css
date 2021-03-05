@@ -1,6 +1,150 @@
-@media only screen and (max-width: 600px) {
+	.couple{
+		width: 100%;
+		padding-bottom: 40px;
+	}
+
+	.days-until {
+		text-align: center;
+		font-size: 4vw;
+		margin-top: 40px;
+		font-family: 'Cinzel', serif;
+	}
+
+
+@media screen and (max-width: 320px) {
+	.flowers {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		width: 99%;
+	}
+
+	.tulips {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.firstbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.secondbouquet {
+		display: none;
+	}
+
+	.thirdbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.fourthbouquet {
+		display: none;
+	}
+
+	.fifthbouquet {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.flowers {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		width: 99%;
+	}
+
+	.tulips {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.firstbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.secondbouquet {
+		display: none;
+	}
+
+	.thirdbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.fourthbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.fifthbouquet {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.flowers {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		width: 99%;
+	}
+
+	.tulips {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.firstbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.secondbouquet {
+		display: none;
+	}
+
+	.thirdbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.fourthbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	.fifthbouquet {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.top-line {
 		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	
 	.date {
@@ -68,11 +212,19 @@
 	.parent-names {
 		display: flex;
 		justify-content: center;
+		padding-top: 35px;
 	}
 
 	.names {
 		font-size: 30px;
 		font-family: 'Cinzel', serif;
+	}
+
+	.registered {
+		height: 15px;
+		width: 100%;
+		background-color: #08450a;
+		margin-bottom: 6%;
 	}
 
 	.nav-bar {
@@ -89,6 +241,7 @@
 	}
 
 	.Elise-name {
+		margin-top: 5%;
 		font-size: 35px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
@@ -98,12 +251,14 @@
 		font-size: 25px;
 		text-align: center;
 		font-family: 'Cinzel', serif;
+		margin: 8% 0;
 	}
 
 	.Benedict-name {
 		font-size: 35px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
+		margin-bottom: 8%;
 	}
 	.hline-parent {
 		display: flex;
@@ -112,7 +267,7 @@
 
 	.horizontal-line {
 		border-bottom: 1px solid black;
-		width: 300px;
+		width: 200px;
 		margin-bottom: 10%;
 		margin-top: 5%;
 	}
@@ -122,26 +277,28 @@
 		justify-content: center;
 		flex-direction: column;
 		margin-bottom: 8%;
+		margin-top: 8%;
 	}
 
 	.location {
 		font-size: 35px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
-		margin-bottom: 0.5%;
+		margin-bottom: 2%;
 	}
 
 	.date-two {
 		font-size: 35px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
+		margin-bottom: 5%;
 	}
 
 	.BigCount {
 		display: flex;
 		flex-direction: column;
 		margin-top: 3%;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 		margin-left: 5%;
 		width: 90%;
 		height: 180px;
@@ -150,17 +307,28 @@
 		border-radius: 5px;
 	}
 
+	.hl-parent{
+		display: flex;
+		justify-content: center;
+		margin: 2%;
+	}
+
+	.hl {
+		border-bottom: 1px solid black;
+		width: 100px;
+	}
+
 	.countdown {
 		width: 100%;
-		height: 200px;
-		font-size: 80px;
+		height: 150px;
+		font-size: 70px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 	}
 
 
 	.flowers {
-		margin-top: 40px;
+		margin: 15% 0 10% 0;
 		display: flex;
 		justify-content: space-between;
 		width: 99%;
@@ -201,14 +369,26 @@
 		height: 80px;
 		border-radius: 40px;
 	}
+
+	.prayer {
+		font-size:  8px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 20px;
+		width: 100%;
+		background-color: #08450a;
+	}
 }
 
-@media only screen and (min-width: 601px) {
+@media screen and (min-width: 601px) {
 
 	.top-line {
 		display: flex;
 	}
-
 
 	.date {
 		padding-right: 15px;
@@ -301,20 +481,21 @@
 		font-size: 80px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
 	}
 
 	.and {
-		font-size: 35px;
+		font-size: 65px;
 		text-align: center;
 		font-family: 'Cinzel', serif;
-		margin: 2% 0;
+		margin: 5% 0;
 	}
 
 	.Benedict-name {
 		font-size: 80px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
-
+		margin-bottom: 5%;
 	}
 
 	.hline-parent {
@@ -332,6 +513,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		margin-top: 5%;
 		margin-bottom: 8%;
 	}
 
@@ -339,13 +521,14 @@
 		font-size: 60px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
-		margin-bottom: 0.5%;
+		margin-bottom: 3%;
 	}
 
 	.date-two {
 		font-size: 60px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
+		margin-bottom: 5%;
 	}
 
 	.BigCount {
@@ -359,6 +542,16 @@
 		border: 1px solid black;
 		background-color: #f2f2f2;
 		border-radius: 5px;
+	}
+
+	.hl-parent{
+		display: flex;
+		justify-content: center;
+	}
+
+	.hl {
+		border-bottom: 1px solid black;
+		width: 300px;
 	}
 
 	.countdown {
@@ -417,44 +610,22 @@
 		border-radius: 90px;
 	}
 
+	.prayer {
+		font-size:  15px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 40px;
+		width: 100%;
+		background-color: #08450a;
+	}
+
 }
 
-.couple{
-	width: 100%;
-	padding-bottom: 40px;
-}
 
-
-
-.days-until {
-	text-align: center;
-	font-size: 4vw;
-	margin-top: 40px;
-	font-family: 'Cinzel', serif;
-}
-
-.hl-parent{
-	display: flex;
-	justify-content: center;
-}
-
-.hl {
-	border-bottom: 1px solid black;
-	width: 50vw;
-}
-
-.prayer {
-	font-size:  1.5vw;
-	margin-top: 30px;
-	text-align: center;
-	font-family: 'Cinzel', serif;
-}
-
-.footer {
-	height: 40px;
-	width: 100%;
-	background-color: #08450a;
-}
 
 
 

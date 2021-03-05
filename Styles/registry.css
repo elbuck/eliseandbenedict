@@ -1,3 +1,6 @@
+/*Style in mobile mode*/
+
+@media screen and (max-width: 600px) {
 	.top-line {
 		display: flex;
 		flex-direction: row;
@@ -10,6 +13,172 @@
 		padding-bottom: 15px;
 	}
 
+	.date {
+		display: none;
+	}
+
+	.vl {
+		display: none;
+	}
+
+	.city {
+		display: none;
+	}
+
+	.nav-drop-down {
+		border: 0;
+		background-color: transparent;
+	}
+
+	.nav-drop-down:focus {
+		outline: none;
+	}
+
+	.drop-down-list {
+		display: none;
+	}
+
+	.drop-down-list.show {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		text-transform: uppercase;
+		margin-top: 20px;
+		background-color: white;
+		width: 100%;
+	}
+
+	.drop-down-list li {
+		position: relative;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.drop-down-list a {
+		position: relative;
+		font-size: 15px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.drop-down-list a:hover {
+		border-bottom: 1px solid black;
+		opacity: 0.5;
+	}
+
+	.parent-names {
+		display: flex;
+		justify-content: center;
+		padding-top: 35px;
+	}
+
+	.names {
+		font-size: 30px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.registered {
+		height: 15px;
+		width: 100%;
+		background-color: #08450a;
+	}
+
+	.registry-sites {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.amazon {
+		color: black;
+		font-size: 40px;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
+		margin-bottom: 3%;
+	}		
+
+	.amazon-button-parent {
+		display: flex;
+		justify-content: center;
+	}
+
+	.registry-button {
+		width: 100px;
+		height: 40px;
+		border: 1px solid black;
+		background-color: transparent;
+		margin-bottom: 5%;
+		border-radius: 5px;
+	}
+
+	.registry-button:hover {
+		opacity: 0.4;
+	}
+
+	.registry-button a {
+		font-size: 10px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.amazon-pic {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		border: 2px solid black;
+	}
+
+	.bb-b {
+		color: black;
+		font-size: 40px;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 15%;
+		margin-bottom: 3%;
+	}
+
+	.bbandb-pic {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		border: 2px solid black;
+		margin-bottom: 3%;
+	}
+
+	.prayer {
+		font-size:  8px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 20px;
+		width: 100%;
+		background-color: #08450a;
+	}
+}
+
+/*Style in computer mode*/
+
+@media screen and (min-width: 601px) {
+
+	.top-line {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 
 	.date {
 		padding-right: 15px;
@@ -37,7 +206,7 @@
 		margin-right: 2%;
 	}
 
-.nav-drop-down:hover {
+	.nav-drop-down:hover {
 		font-size: 110%;
 	}
 
@@ -91,14 +260,13 @@
 		font-family: 'Great Vibes', cursive;
 	}
 
+	.registered {
+		height: 25px;
+		width: 100%;
+		background-color: #08450a;
+	}
 
-.registered {
-	height: 25px;
-	width: 100%;
-	background-color: #08450a;
-}
-
-.registry-links {
+	.registry-sites {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -106,75 +274,80 @@
 		width: 100%;
 	}
 
+	.amazon {
+		text-decoration: none;
+		color: black;
+		font-size: 50px;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
+		margin-bottom: 1%;
+	}		
 
-.registry-links li {
+	.amazon-button-parent {
+		display: flex;
+		justify-content: center;
+	}
+
+	.registry-button {
+		width: 200px;
+		height: 80px;
+		border: 1px solid black;
+		background-color: transparent;
+		margin-bottom: 3%;
+		border-radius: 5px;
+	}
+
+	.registry-button:hover {
+		opacity: 0.4;
+	}
+
+	.registry-button a {
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+	}
+
+	.amazon-pic {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		border: 2px solid black;
+	}
+
+	.bb-b {
+		margin-top: 15%;
+		margin-bottom: 1%;
 		text-decoration: none;
 		color: black;
 		font-size: 50px;
 		font-family: 'Great Vibes', cursive;
 	}
 
-.amazon-button-parent {
-	display: flex;
-	justify-content: center;
+	.bbandb-pic {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		border: 2px solid black;
+		margin-bottom: 3%;
+	}
 
-}
-
-.registry-button {
-	width: 200px;
-	height: 80px;
-	border: 1px solid black;
-	background-color: transparent;
-	margin-bottom: 3%;
-	border-radius: 5px;
-}
-
-.registry-button:hover {
-	opacity: 0.4;
-}
-
-.registry-button a {
-		font-size: 20px;
-		color: black;
-		text-decoration: none;
+	.prayer {
+		font-size:  15px;
+		margin-top: 30px;
 		text-align: center;
 		font-family: 'Cinzel', serif;
+	}
+
+	.footer {
+		height: 40px;
+		width: 100%;
+		background-color: #08450a;
+	}
 }
 
-.amazon {
-	margin-top: 5%;
-	margin-bottom: 1%;
-}
 
-.amazon-pic {
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
-	border: 2px solid black;
-}
 
-.bb-b {
-	margin-top: 15%;
-	margin-bottom: 1%;
-}
 
-.bbandb-pic {
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
-	border: 2px solid black;
-	margin-bottom: 3%;
-}
-
-.prayer {
-	font-size:  1.5vw;
-	margin-top: 30px;
-	text-align: center;
-	font-family: 'Cinzel', serif;}
-
-.footer {
-	height: 40px;
-	width: 100%;
-	background-color: #08450a;
-}
 
