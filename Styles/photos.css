@@ -85,28 +85,31 @@
 		background-color: #08450a;
 	}
 
-	.jandgwedding-pic {
+	.couple-pics {
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
-		
+		flex-direction: column;
 	}
 
 	.jandgwedding {
-		width: 30%;
+		width: 80%;
 		margin-top: 10%;
-		margin-right: 5%;
+		margin-left: 10%;
+		border: 1px solid grey;
 	}
 
 	.aandpwedding {
-		width: 30%;
+		width: 80%;
 		margin-top: 10%;
-		margin-right: 5%;
+		margin-left: 10%;
+		border: 1px solid grey;
 	}
 
 	.kandjwedding {
-		width: 30%;
+		width: 80%;
 		margin-top: 10%;
+		margin-left: 10%;
+		border: 1px solid grey;
 	}
 
 	.prayer {
@@ -183,7 +186,8 @@
 		text-transform: uppercase;
 		margin-top: 20px;
 		background-color: white;
-		opacity: 0.7;
+		opacity: 0.9;
+		width: 23%;
 	}
 
 	.drop-down-list li {
@@ -223,7 +227,31 @@
 		background-color: #08450a;
 	}
 
+	.couple-pics {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
+	.jandgwedding {
+		width: 30%;
+		margin-top: 10%;
+		margin-right: 10%;
+		border: 1px solid grey;
+	}
+
+	.aandpwedding {
+		width: 30%;
+		margin-top: 10%;
+		border: 1px solid grey;
+	}
+
+	.kandjwedding {
+		width: 30%;
+		margin-top: 10%;
+		border: 1px solid grey;
+	}
 
 	.prayer {
 		font-size:  1.5vw;
