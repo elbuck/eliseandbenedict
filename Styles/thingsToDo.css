@@ -162,13 +162,12 @@
 		margin-top: 20px;
 		background-color: white;
 		opacity: 0.9;
-		width: 23%;
 	}
 
 	.drop-down-list li {
 		position: relative;
 		margin-top: 10px;
-		margin-left: 20px;
+		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}

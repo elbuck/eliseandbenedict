@@ -216,7 +216,7 @@
 	}
 
 	.names {
-		font-size: 30px;
+		font-size: 40px;
 		font-family: 'Cinzel', serif;
 	}
 
@@ -242,20 +242,20 @@
 
 	.Elise-name {
 		margin-top: 5%;
-		font-size: 35px;
+		font-size: 55px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 	}
 
 	.and {
-		font-size: 25px;
+		font-size: 35px;
 		text-align: center;
 		font-family: 'Cinzel', serif;
 		margin: 8% 0;
 	}
 
 	.Benedict-name {
-		font-size: 35px;
+		font-size: 55px;
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 		margin-bottom: 8%;
@@ -571,43 +571,39 @@
 
 	.tulips {
 
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
 	}
 
 	.firstbouquet {
 
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
 	}
 
 	.secondbouquet {
 
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
 	}
 
 	.thirdbouquet {
-
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+	width: 100px;
+		height: 100px;
+		border-radius: 50px;
 	}
 
 	.fourthbouquet {
-
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
 	}
 
 	.fifthbouquet {
-		width: 180px;
-		height: 180px;
-		border-radius: 90px;
+		display: none;
 	}
 
 	.prayer {
@@ -625,7 +621,150 @@
 
 }
 
+@media screen and (min-width: 700px) {
+	.Elise-name {
+		font-size: 70px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
+	}
 
+	.and {
+		font-size: 55px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+		margin: 5% 0;
+	}
 
+	.Benedict-name {
+		font-size: 70px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-bottom: 5%;
+	}
 
+	.fifthbouquet {
+		display: unset;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+	}
+}
 
+@media screen and (min-width: 850px) {
+	.Elise-name {
+		font-size: 80px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
+	}
+
+	.and {
+		font-size: 65px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+		margin: 5% 0;
+	}
+
+	.Benedict-name {
+		font-size: 80px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-bottom: 5%;
+	}
+
+	.tulips {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+
+	.firstbouquet {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+
+	.secondbouquet {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+
+	.thirdbouquet {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+
+	.fourthbouquet {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+
+	.fifthbouquet {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.Elise-name {
+		font-size: 90px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-top: 5%;
+	}
+
+	.and {
+		font-size: 75px;
+		text-align: center;
+		font-family: 'Cinzel', serif;
+		margin: 5% 0;
+	}
+
+	.Benedict-name {
+		font-size: 90px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		margin-bottom: 5%;
+	}
+
+	.tulips {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.firstbouquet {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.secondbouquet {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.thirdbouquet {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.fourthbouquet {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.fifthbouquet {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+}
