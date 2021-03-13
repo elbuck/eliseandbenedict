@@ -48,9 +48,9 @@ if($_POST) {
 
     // Now, compose and send your message.
     $result = $mg->messages()->send('mx.eliseandbenedict.com', [
-        'from'  => $visitor_name . "<$visitor_email>",
+        'from'  => $visitor_email,
         'to'    => $recipient,
-        'subject' => "RSVP from $recipient",
+        'subject' => "RSVP from $visitor_name",
         'html'  => $email_body
     ]);
 
