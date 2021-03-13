@@ -1,5 +1,8 @@
 <?php
 
+require 'vendor/autoload.php';
+use Mailgun\Mailgun;
+
 if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
@@ -40,11 +43,17 @@ if($_POST) {
 
     $recipient = "elise.buckley@my.avemaria.edu ";
 
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
+    $mgClient = new Mailgun('key-136adf4ea75b6f7f57adfe967ab5f2af');
+    $domain = "sandbox89bbb148ecc94eef98953b58262fa0f7.mailgun.org";
 
-    if(mail($recipient, $email_title, $email_body, $headers)) {
+    $result = $mgClient->sendMessage($domain, array(
+        'from'  => $visitor_name . "<$visitor_email>",
+        'to'    => "Elise <$recipient>",
+        'subject' => "RSVP from $recipient",
+        'text'  => $email_body
+    ));
+
+    if($result) {
         header('Location: /thankyou.html');
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
