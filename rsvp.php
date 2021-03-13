@@ -46,7 +46,7 @@ if($_POST) {
     $mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
 
     // Now, compose and send your message.
-    $success = $mg->messages()->send('mx.eliseandbenedict.com', [
+    $result = $mg->messages()->send('mx.eliseandbenedict.com', [
         'from'  => $visitor_name . "<$visitor_email>",
         'to'    => "Elise <$recipient>",
         'subject' => "RSVP from $recipient",
