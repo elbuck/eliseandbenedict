@@ -50,7 +50,7 @@ if($_POST) {
         'from'  => $visitor_name . "<$visitor_email>",
         'to'    => "Elise <$recipient>",
         'subject' => "RSVP from $recipient",
-        'text'  => $email_body
+        'html'  => $email_body
     ]);
 
     if($result) {
