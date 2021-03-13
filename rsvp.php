@@ -41,7 +41,8 @@ if($_POST) {
 
     $email_body .= "</div>";
 
-    $recipient = "elbuck2010@gmail.com";
+    // $recipient = "elbuck2010@gmail.com";
+    $recipient = "tommyjmarshall@gmail.com";
 
     $mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
 
