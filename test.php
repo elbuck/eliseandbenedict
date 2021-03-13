@@ -10,8 +10,7 @@ use Mailgun\Mailgun;
 $mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
 
 // Now, compose and send your message.
-// $mg->messages()->send($domain, $params);
-$mg->messages()->send('sandbox89bbb148ecc94eef98953b58262fa0f7.mailgun.org', [
+$mg->messages()->send('mx.eliseandbenedict.com', [
   'from'    => 'bob@example.com',
   'to'      => 'elise.buckley@my.avemaria.edu ',
   'subject' => 'The PHP SDK is awesome!',
