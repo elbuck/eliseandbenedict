@@ -51,6 +51,7 @@ if($_POST) {
         'from'  => $visitor_email,
         'to'    => $recipient,
         'subject' => "RSVP from $visitor_name",
+        'text'  => '',
         'html'  => $email_body
     ]);
 
