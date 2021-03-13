@@ -41,17 +41,17 @@ if($_POST) {
 
     $email_body .= "</div>";
 
-    $recipient = "elise.buckley@my.avemaria.edu";
+    $recipient = "elbuck2010@gmail.com";
 
-    $mgClient = new Mailgun('key-136adf4ea75b6f7f57adfe967ab5f2af');
-    $domain = "sandbox89bbb148ecc94eef98953b58262fa0f7.mailgun.org";
+    $mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
 
-    $result = $mgClient->sendMessage($domain, array(
+    // Now, compose and send your message.
+    $success = $mg->messages()->send('mx.eliseandbenedict.com', [
         'from'  => $visitor_name . "<$visitor_email>",
         'to'    => "Elise <$recipient>",
         'subject' => "RSVP from $recipient",
         'text'  => $email_body
-    ));
+    ]);
 
     if($result) {
         header('Location: /thankyou.html');
