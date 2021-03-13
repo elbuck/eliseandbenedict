@@ -7,12 +7,13 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 # Instantiate the client.
-$mgClient = new Mailgun('key-136adf4ea75b6f7f57adfe967ab5f2af');
-$domain = "sandbox89bbb148ecc94eef98953b58262fa0f7.mailgun.org";
-# Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
-    'from'  => 'Excited User <mailgun@eliseandbenedict.com>',
-    'to'    => 'Elise <elise.buckley@my.avemaria.edu >',
-    'subject' => 'Hello',
-    'text'  => 'Testing some Mailgun awesomness!'
-));
+$mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
+
+// Now, compose and send your message.
+// $mg->messages()->send($domain, $params);
+$mg->messages()->send('sandbox89bbb148ecc94eef98953b58262fa0f7.mailgun.org', [
+  'from'    => 'bob@example.com',
+  'to'      => 'elise.buckley@my.avemaria.edu ',
+  'subject' => 'The PHP SDK is awesome!',
+  'text'    => 'It is so simple to send a message.'
+]);
