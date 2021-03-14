@@ -22,7 +22,7 @@ if($_POST) {
         $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
         $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>gGuest Email:</b></label>&nbsp;<span>".$visitor_email."</span>
+                           <label><b>Guest Email:</b></label>&nbsp;<span>".$visitor_email."</span>
                         </div>";
     }
 
