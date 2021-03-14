@@ -13,7 +13,7 @@ if($_POST) {
     if(isset($_POST['guest_name'])) {
         $guest_name = filter_var($_POST['guest_name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Guest Name:</b></label>&nbsp;<span>".$visitor_name."</span>
+                           <label><b>Guest Name:</b></label>&nbsp;<span>".$guest_name."</span>
                         </div>";
     }
 
@@ -21,7 +21,7 @@ if($_POST) {
         $guest_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['guest_email']);
         $guest_email = filter_var($guest_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>guest Email:</b></label>&nbsp;<span>".$guest_email."</span>
+                           <label><b>gGuest Email:</b></label>&nbsp;<span>".$guest_email."</span>
                         </div>";
     }
 
