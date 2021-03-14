@@ -7,6 +7,7 @@ if($_POST) {
     $guest_name = "";
     $guest_email = "";
     $rsvp = "";
+    $guest_number = "";
     $guest_message = "";
     $email_body = "<div>";
 
@@ -32,12 +33,12 @@ if($_POST) {
                         </div>";
     }
 
-    // if(isset($_POST['number_guests'])) {
-    //     $rsvp = filter_var($_POST['number_guests'], FILTER_SANITIZE_STRING);
-    //     $email_body .= "<div>
-    //                        <label><b>RSVP:</b></label>&nbsp;<span>".$rsvp."</span>
-    //                     </div>";
-    // }
+    if(isset($_POST['guest_number'])) {
+        $rsvp = filter_var($_POST['guest_number'], FILTER_SANITIZE_STRING);
+        $email_body .= "<div>
+                           <label><b>Number of Guests:</b></label>&nbsp;<span>".$guest_number."</span>
+                        </div>";
+    }
 
     if(isset($_POST['guest_message'])) {
         $guest_message = htmlspecialchars($_POST['guest_message']);
