@@ -4,25 +4,25 @@ require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
 if($_POST) {
-    $guest_name = "";
-    $guest_email = "";
+    $visitor_name = "";
+    $visitor_email = "";
     $rsvp = "";
-    $guest_number = "";
-    $guest_message = "";
+    $visitor_number = "";
+    $visitor_message = "";
     $email_body = "<div>";
 
-    if(isset($_POST['guest_name'])) {
-        $guest_name = filter_var($_POST['guest_name'], FILTER_SANITIZE_STRING);
+    if(isset($_POST['visitor_name'])) {
+        $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Guest Name:</b></label>&nbsp;<span>".$guest_name."</span>
+                           <label><b>Guest Name:</b></label>&nbsp;<span>".$visitor_name."</span>
                         </div>";
     }
 
-    if(isset($_POST['guest_email'])) {
-        $guest_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['guest_email']);
-        $guest_email = filter_var($guest_email, FILTER_VALIDATE_EMAIL);
+    if(isset($_POST['visitor_email'])) {
+        $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
+        $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>gGuest Email:</b></label>&nbsp;<span>".$guest_email."</span>
+                           <label><b>gGuest Email:</b></label>&nbsp;<span>".$visitor_email."</span>
                         </div>";
     }
 
@@ -33,18 +33,18 @@ if($_POST) {
                         </div>";
     }
 
-    if(isset($_POST['guest_number'])) {
-        $rsvp = filter_var($_POST['guest_number'], FILTER_SANITIZE_STRING);
+    if(isset($_POST['visitor_number'])) {
+        $visitor_number = filter_var($_POST['visitor_number'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Number of Guests:</b></label>&nbsp;<span>".$guest_number."</span>
+                           <label><b>Number of Guests:</b></label>&nbsp;<span>".$visitor_number."</span>
                         </div>";
     }
 
-    if(isset($_POST['guest_message'])) {
-        $guest_message = htmlspecialchars($_POST['guest_message']);
+    if(isset($_POST['visitor_message'])) {
+        $visitor_message = htmlspecialchars($_POST['visitor_message']);
         $email_body .= "<div>
                            <label><b>Guest Message:</b></label>
-                           <div>".$guest_message."</div>
+                           <div>".$visitor_message."</div>
                         </div>";
     }
 
