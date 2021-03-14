@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <Link rel="stylesheet" href="Styles/rsvp.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
 </head>
 <body>
-  <form action="rsvp.php" method="post">
-    <div class="elem-group">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-    </div>
-    <div class="elem-group">
-      <label for="email">Your E-mail</label>
-      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-    </div>
-    <div class="elem-group">
-      <label for="department-selection">RSVP</label>
-      <select id="department-selection" name="concerned_department" required>
-          <option value="">Select</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-      </select>
-    </div>
-    <div class="elem-group">
-      <label for="message">Write your message</label>
-      <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
-    </div>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="top-line">
+      <!-- Start Nav Bar for Mobile -->
+     <!--  <button class="nav-drop-down">
+        <i class="fas fa-bars"></i>
+      </button>
+        <div class="drop-down-list">
+          <li><a href="#nav-bar">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="registry.html">Registry</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="thingsToDo.html">Things To Do</a></li>
+        </div> -->
+      <!-- End Nav Bar for Mobile -->
+      <div class="date">OCTOBER 20, 2021</div>
+      <div class="vl"></div>
+      <div class="city">ST. LOUIS, MISSOURI</div>
+     </div>
+
+      <div class="parent-names">
+        <div class="names">Elise & Benedict</div>
+      </div>
+
+
+  <div class="form-parent">
+    <form action="rsvp.php" method="post" class="form-style">
+      <div class="elem-group">
+        <label for="name" class="list-items">Your Name:</label>
+        <input type="text" id="name" class="input" name="visitor_name" placeholder="Enter Your Name Here" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="elem-group">
+        <label for="email" class="list-items">Your E-mail:</label>
+        <input type="email" id="email" class="input" name="visitor_email" placeholder="Enter Your Email Here" required>
+      </div>
+      <div class="elem-group">
+        <label for="department-selection" class="list-items">RSVP:</label>
+        <select id="department-selection" class="input" name="concerned_department" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+      </div>
+      <div class="elem-group">
+        <label for="department-selection" class="list-items">Number of Guests:</label>
+        <select id="department-selection" class="input" name="concerned_department" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+      </div>
+      <div class="elem-group">
+        <label for="message" class="list-items">Names of Guests:</label>
+        <textarea id="message" class="input" name="visitor_message" placeholder="Enter Guest Names" required></textarea>
+      </div>
+      <div class="button-parent">
+        <button type="submit" class="RSVP-button">Send RSVP</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>

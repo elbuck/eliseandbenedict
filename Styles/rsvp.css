@@ -1,0 +1,94 @@
+	.top-line {
+		display: flex;
+	}
+
+	.date {
+		padding-right: 15px;
+		font-size: 14px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.vl {
+		border-left: 1.5px solid black;
+		border-radius: 9px;
+		height: 16px;
+		margin-top: 1px;
+		padding: 0;
+	}
+
+	.city {
+		font-size: 14px;
+		padding-left: 15px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.parent-names {
+		display: flex;
+		justify-content: center;
+		padding: 8px;
+	}
+
+	.names {
+		font-size: 75px;
+		font-family: 'Great Vibes', cursive;
+	}
+
+	.form-parent {
+		 width: 100%;
+		 margin: 0 auto;
+	}
+
+	.form-style {
+		display: flex;
+		flex-direction: column;
+		font-family: 'Cinzel', serif;
+		border-top: 60px solid #08450a;
+		border-bottom: 60px solid #08450a;
+		border-right: 60px solid #08450a;
+		border-left: 60px solid #08450a;;
+
+	}
+
+	.elem-group {
+		display: flex;
+		flex-direction: column;
+		padding: 4% 0;
+	}
+
+	.list-items {
+		margin: 0 0 1% 33%;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	.input {
+		width: 30%;
+		margin: 0 0 0 33%;
+		font-size: 15px;
+		font-family: 'Cinzel', serif;
+		font-weight: 500;
+		font-weight: bold;
+		padding: 12px 20px;
+		}
+
+	.button-parent {
+		display: flex;
+		justify-content: center;
+	}
+
+	.RSVP-button {
+		width: 20%;
+		background-color: white;
+		font-size: 15px;
+		font-family: 'Cinzel', serif;
+		margin-bottom: 5%;
+		padding: 12px 20px;
+	}
+
+	.RSVP-button:hover {
+		cursor: pointer;
+		background-color: lightgrey;
+	}
+
+
+

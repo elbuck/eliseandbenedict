@@ -4,23 +4,24 @@ require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
 if($_POST) {
-    $visitor_name = "";
-    $visitor_email = "";
-    $visitor_message = "";
+    $guest_name = "";
+    $guest_email = "";
+    $rsvp = "";
+    $guest_message = "";
     $email_body = "<div>";
 
-    if(isset($_POST['visitor_name'])) {
-        $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
+    if(isset($_POST['guest_name'])) {
+        $guest_name = filter_var($_POST['guest_name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
+                           <label><b>Guest Name:</b></label>&nbsp;<span>".$visitor_name."</span>
                         </div>";
     }
 
-    if(isset($_POST['visitor_email'])) {
-        $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-        $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
+    if(isset($_POST['guest_email'])) {
+        $guest_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['guest_email']);
+        $guest_email = filter_var($guest_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>Visitor Email:</b></label>&nbsp;<span>".$visitor_email."</span>
+                           <label><b>guest Email:</b></label>&nbsp;<span>".$guest_email."</span>
                         </div>";
     }
 
@@ -31,11 +32,18 @@ if($_POST) {
                         </div>";
     }
 
-    if(isset($_POST['visitor_message'])) {
-        $visitor_message = htmlspecialchars($_POST['visitor_message']);
+    // if(isset($_POST['number_guests'])) {
+    //     $rsvp = filter_var($_POST['number_guests'], FILTER_SANITIZE_STRING);
+    //     $email_body .= "<div>
+    //                        <label><b>RSVP:</b></label>&nbsp;<span>".$rsvp."</span>
+    //                     </div>";
+    // }
+
+    if(isset($_POST['guest_message'])) {
+        $guest_message = htmlspecialchars($_POST['guest_message']);
         $email_body .= "<div>
-                           <label><b>Visitor Message:</b></label>
-                           <div>".$visitor_message."</div>
+                           <label><b>Guest Message:</b></label>
+                           <div>".$guest_message."</div>
                         </div>";
     }
 
