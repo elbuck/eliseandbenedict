@@ -3,6 +3,9 @@
 require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
@@ -50,10 +53,10 @@ if($_POST) {
 
     $email_body .= "</div>";
 
-    $recipient = "elbuck2010@gmail.com";
+    $recipient = $_ENV['RECIPIENT'];
     // $recipient = "tommyjmarshall@gmail.com";
 
-    $mg = Mailgun::create('key-136adf4ea75b6f7f57adfe967ab5f2af'); // For US servers
+    $mg = Mailgun::create($_ENV['MAILGUN_KEY']); // For US servers
 
     // Now, compose and send your message.
     $result = $mg->messages()->send('mx.eliseandbenedict.com', [
