@@ -434,6 +434,7 @@
 
 	.RSVP:hover {
 		background-color: lightgrey;
+		cursor: pointer;
 	}
 
 	.RSVP a {

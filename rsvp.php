@@ -43,7 +43,7 @@ if($_POST) {
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
         $email_body .= "<div>
-                           <label><b>Guest Message:</b></label>
+                           <label><b>Guest Names:</b></label>
                            <div>".$visitor_message."</div>
                         </div>";
     }
