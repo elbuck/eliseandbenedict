@@ -431,3 +431,21 @@
 
 }
 
+@media screen and (min-width: 760px) {
+	.reception {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 4%;
+		margin-left: 0.5%;
+	}
+
+	.union-station-pic {
+		border: 2px solid black;
+		box-shadow: 3px 3px lightgrey;
+		height:400px;
+		widows: 400px;
+		margin: 3% 0;
+	}
+}
+

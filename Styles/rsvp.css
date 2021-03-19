@@ -88,10 +88,10 @@
 		display: flex;
 		flex-direction: column;
 		font-family: 'Cinzel', serif;
-		border-top: 40px solid #08450a;
-		border-bottom: 40px solid #08450a;
-		border-right: 40px solid #08450a;
-		border-left: 40px solid #08450a;;
+		border-top: 25px solid #08450a;
+		border-bottom: 25px solid #08450a;
+		border-right: 25px solid #08450a;
+		border-left: 25px solid #08450a;;
 
 	}
 
@@ -102,15 +102,15 @@
 	}
 
 	.list-items {
-		margin: 0 0 1% 20%;
-		font-size: 15px;
+		margin: 0 0 1% 10%;
+		font-size: 20px;
 		font-weight: 300;
 	}
 
 	.input {
-		width: 40%;
-		margin: 0 0 0 20%;
-		font-size: 10px;
+		width: 50%;
+		margin: 0 0 0 18%;
+		font-size: 14px;
 		font-family: 'Cinzel', serif;
 		font-weight: 500;
 		font-weight: bold;
