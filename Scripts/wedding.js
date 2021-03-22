@@ -23,7 +23,7 @@ window.addEventListener('click', function (event) {
 // Countdowwn to wedding date
 const today = new Date ()
 
-const Wedding = new Date('2021-10-20T21:58:01.532Z')
+const Wedding = new Date('2021-10-02T21:58:01.532Z')
 
 const countdown = document.querySelector('.countdown')
 
