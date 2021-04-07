@@ -127,6 +127,14 @@
 		margin-left: 3%;
 	}	
 
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
+	}
+
 	.ceremony-info {
 		display: flex;
 		flex-direction: column;
@@ -345,6 +353,15 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
+		margin-top: 3%;
 	}
 
 	.title {

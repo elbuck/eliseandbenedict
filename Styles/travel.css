@@ -119,6 +119,10 @@
 		margin-bottom: 5%;
 	}
 
+	.Hilton-Frontenac {
+		width: 100%;
+	}
+
 	.hotel-name {
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
@@ -126,17 +130,25 @@
 		margin-top: 15%;
 	}
 
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
+	}
+
 	.hotel-street {
 		text-align: center;
 		font-family: 'Cinzel', serif;
-		font-size: 25px;
+		font-size: 23px;
 		margin-top: 4%;
 	}
 
 	.hotel-address {
 		text-align: center;
 		font-family: 'Cinzel', serif;
-		font-size: 25px;
+		font-size: 23px;
 		margin-top: 1%;
 	}
 
@@ -314,6 +326,14 @@
 		margin-top: 5%;
 	}
 
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
+	}
+
 	.hotel-street {
 		text-align: center;
 		font-family: 'Cinzel', serif;
@@ -341,6 +361,12 @@
 		font-size: 20px;
 		font-family: 'Cinzel', serif;
 		margin-top: 5%;
+	}
+
+	.hotel-website:hover {
+		background-color: black;
+		cursor: pointer;
+		color: white;
 	}
 
 	.prayer {

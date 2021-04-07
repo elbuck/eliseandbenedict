@@ -106,21 +106,14 @@
 		flex-direction: column;
 	}
 
-	.jandgwedding {
+	.pic {
 		width: 80%;
 		margin-top: 10%;
 		margin-left: 10%;
 		border: 1px solid grey;
 	}
 
-	.aandpwedding {
-		width: 80%;
-		margin-top: 10%;
-		margin-left: 10%;
-		border: 1px solid grey;
-	}
-
-	.kandjwedding {
+	.pics {
 		width: 80%;
 		margin-top: 10%;
 		margin-left: 10%;
@@ -263,26 +256,19 @@
 	.couple-pics {
 		display: flex;
 		justify-content: center;
+		justify-content: space-around;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
-	.jandgwedding {
-		width: 30%;
-		margin-top: 10%;
-		margin-right: 10%;
-		border: 1px solid grey;
+	.pic {
+		display: none;
 	}
 
-	.aandpwedding {
+	.pics {
 		width: 30%;
 		margin-top: 10%;
-		border: 1px solid grey;
-	}
-
-	.kandjwedding {
-		width: 30%;
-		margin-top: 10%;
+		/*margin-right: 10%;*/
 		border: 1px solid grey;
 	}
 

@@ -329,18 +329,17 @@
 		background-color: transparent;
 		margin-bottom: 3%;
 		border-radius: 5px;
-	}
-
-	.registry-button:hover {
-		opacity: 0.4;
-	}
-
-	.registry-button a {
 		font-size: 20px;
 		color: black;
 		text-decoration: none;
 		text-align: center;
 		font-family: 'Cinzel', serif;
+	}
+
+	.registry-button:hover {
+		background-color: black;
+		color: white;
+		cursor: pointer;
 	}
 
 	.amazon-pic {
