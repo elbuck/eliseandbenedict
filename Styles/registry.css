@@ -102,19 +102,53 @@
 		background-color: #08450a;
 	}
 
-	.registry-sites {
+	.announce-parent {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
+		margin-top: 2%;
+		background-color: #F2f2f2;
+	}
+
+	.announcement {
+		margin-top: 3%;
+		margin-bottom: 3%;
+		font-size: 16px;
+		font-family: 'Cinzel', serif;
+		width: 50%;
 		text-align: center;
 	}
 
-	.amazon {
+	.registry-sites {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		list-style: none;
+		margin-bottom: 5%;
+		width: 100%;
+	}
+
+	.all-registry {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	.name {
+		text-decoration: none;
 		color: black;
-		font-size: 40px;
+		font-size: 50px;
 		font-family: 'Great Vibes', cursive;
-		margin-top: 5%;
-		margin-bottom: 3%;
-	}		
+		margin-top: 50px;
+	}	
+
+	.description {
+		font-family: 'Cinzel', serif;
+		margin-bottom: 5%;
+	}	
 
 	.amazon-button-parent {
 		display: flex;
@@ -122,47 +156,22 @@
 	}
 
 	.registry-button {
-		width: 100px;
-		height: 40px;
+		width: 200px;
+		height: 80px;
 		border: 1px solid black;
 		background-color: transparent;
-		margin-bottom: 5%;
 		border-radius: 5px;
-	}
-
-	.registry-button:hover {
-		opacity: 0.4;
-	}
-
-	.registry-button a {
-		font-size: 10px;
+		font-size: 20px;
 		color: black;
 		text-decoration: none;
 		text-align: center;
 		font-family: 'Cinzel', serif;
 	}
 
-	.amazon-pic {
-		width: 90%;
-		margin-right: 5%;
-		margin-left: 5%;
-		border: 2px solid black;
-	}
-
-	.bb-b {
-		color: black;
-		font-size: 40px;
-		font-family: 'Great Vibes', cursive;
-		margin-top: 15%;
-		margin-bottom: 3%;
-	}
-
-	.bbandb-pic {
-		width: 90%;
-		margin-right: 5%;
-		margin-left: 5%;
-		border: 2px solid black;
-		margin-bottom: 3%;
+	.registry-button:hover {
+		background-color: black;
+		color: white;
+		cursor: pointer;
 	}
 
 	.prayer {
@@ -300,22 +309,54 @@
 		background-color: #08450a;
 	}
 
+	.announce-parent {
+		display: flex;
+		justify-content: center;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		background-color: #F2f2f2;
+	}
+
+	.announcement {
+		margin-top: 3%;
+		margin-bottom: 3%;
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
+		width: 50%;
+		text-align: center;
+	}
+
 	.registry-sites {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 		text-align: center;
 		list-style: none;
+		margin-bottom: 5%;
 		width: 100%;
 	}
 
-	.amazon {
+	.all-registry {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	.name {
 		text-decoration: none;
 		color: black;
 		font-size: 50px;
 		font-family: 'Great Vibes', cursive;
-		margin-top: 5%;
-		margin-bottom: 1%;
-	}		
+		margin-top: 50px;
+	}	
+
+	.description {
+		font-family: 'Cinzel', serif;
+		margin-bottom: 5%;
+	}	
 
 	.amazon-button-parent {
 		display: flex;
@@ -327,7 +368,6 @@
 		height: 80px;
 		border: 1px solid black;
 		background-color: transparent;
-		margin-bottom: 3%;
 		border-radius: 5px;
 		font-size: 20px;
 		color: black;
@@ -340,30 +380,6 @@
 		background-color: black;
 		color: white;
 		cursor: pointer;
-	}
-
-	.amazon-pic {
-		width: 80%;
-		margin-right: 10%;
-		margin-left: 10%;
-		border: 2px solid black;
-	}
-
-	.bb-b {
-		margin-top: 15%;
-		margin-bottom: 1%;
-		text-decoration: none;
-		color: black;
-		font-size: 50px;
-		font-family: 'Great Vibes', cursive;
-	}
-
-	.bbandb-pic {
-		width: 80%;
-		margin-right: 10%;
-		margin-left: 10%;
-		border: 2px solid black;
-		margin-bottom: 3%;
 	}
 
 	.prayer {
