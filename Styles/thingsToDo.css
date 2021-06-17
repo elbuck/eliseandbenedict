@@ -177,6 +177,49 @@
 		color: black;
 	}
 
+	.explore-info {
+		text-align: center;
+		font-size: 15px;
+		font-family: 'Cinzel', serif;
+	}
+
+	.gooeybutter {
+		height: 150px;
+		width: 140px;
+		padding: 20px;
+	}
+
+	.food {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	.food-pics {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.food1 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.food-type {
+		font-size: 30px;
+		font-family: 'Great Vibes', cursive;
+		text-align: center;
+	}
+
+	.food-flavor {
+		font-size: 15px;
+		font-family: 'Cinzel', serif;
+		text-align: center;
+	}
+
 
 	.registered {
 		height: 15px;
@@ -404,18 +447,47 @@
 		color: black;
 	}
 
-	.stlarch {
-		width: 100%;
-		margin-top: 5%;
-		margin-bottom: 5%;
+	.explore-info {
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
 	}
 
-	.arch {
-		text-align: center;
+	.gooeybutter {
+		height: 300px;
+		width: 290px;
+		padding: 20px;
+	}
+
+	.food {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	.food-pics {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.food1 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.food-type {
+		font-size: 40px;
 		font-family: 'Great Vibes', cursive;
-		font-size: 50px;
-		margin-bottom: 1%;
-		color: black;
+		text-align: center;
+	}
+
+	.food-flavor {
+		font-size: 20px;
+		font-family: 'Cinzel', serif;
+		text-align: center;
 	}
 
 	.prayer {
