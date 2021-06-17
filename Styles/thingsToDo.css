@@ -127,7 +127,14 @@
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 		font-size: 28.5px;
-		margin-bottom: 1%;
+	}
+
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
 	}
 
 	.forest-park {
@@ -145,12 +152,12 @@
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 		font-size: 30px;
-		margin-bottom: 1%;
 	}
 
 	.fpattractions {
 		display: flex;
 		flex-direction: column;
+		padding-top: 10px;
 	}
 
 	.fpattractions ul {
@@ -170,19 +177,6 @@
 		color: black;
 	}
 
-	.stlarch {
-		width: 100%;
-		margin-top: 5%;
-		margin-bottom: 5%;
-	}
-
-	.arch {
-		text-align: center;
-		font-family: 'Great Vibes', cursive;
-		font-size: 30px;
-		margin-bottom: 1%;
-		color: black;
-	}
 
 	.registered {
 		height: 15px;
@@ -359,7 +353,14 @@
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 		font-size: 45px;
-		margin-bottom: 1%;
+	}
+
+	.map-parent{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: black;
+		font-size: 150%;
 	}
 
 	.forest-park {
@@ -377,12 +378,12 @@
 		text-align: center;
 		font-family: 'Great Vibes', cursive;
 		font-size: 45px;
-		margin-bottom: 1%;
 	}
 
 	.fpattractions {
 		display: flex;
 		flex-direction: column;
+		padding-top: 10px;
 	}
 
 	.fpattractions ul {
