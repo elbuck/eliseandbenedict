@@ -464,12 +464,12 @@
 		flex-direction: row;
 		justify-content: center;
 		list-style: none;
-		width: 50%;
+		width: 100%;
 	}
 
 
 	.nav-bar li {
-		margin: 0 5%;
+		margin: 0 2.5%;
 
 	}
 
@@ -477,7 +477,7 @@
 		text-decoration: none;
 		color: black;
 		font-size: 15px;
-		text-transform: uppercase;
+		font-family: 'Cinzel', serif;
 	}
 
 	.nav-bar a:hover {
